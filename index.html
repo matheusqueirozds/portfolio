@@ -28,25 +28,49 @@
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
 </head>
 
-<body>
+<body class="font-1-s">
     <header class="header-bg">
         <div class="header container">
             <a href="/index.html"><img src="/assets/img/logo.svg"></a>
 
-            <nav class="header-menu">
-                <ul class="header-lista">
-                    <li><a href="#home">Home</a></li>
+            <nav>
+                <ul class="header-menu font-1-m color-1">
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="introducao-bg">
-        <div class="main container">
+    <main class="introducao-bg" id="introducao">
+        <div class="introducao container">
+            <div class="introducao-titulo">
+                <h1>Olá! Eu sou o <strong>Matheus Queiroz</strong></h1>
+                <p>Desenvolvedor Frontend e UI Designer.</p>
+            </div>
 
+            <div class="introducao-informacoes">
+                <div class="introducao-conteudo">
+                    <h2 class="font-1-l-b">Dev Frontend</h2>
+                    <p>Desenvolvo experiências de navegação através de projetos únicos, utilizando <strong>boas práticas</strong> com foco em <strong>performance</strong>.</p>
+                </div>
+
+                <picture class="introducao-imagem">
+                    <img src="/assets/img//computer.svg" alt="computador" width="224" height="200">
+                </picture>
+
+                <div class="introducao-conteudo">
+                    <h2 class="font-1-l-b">UI Designer</h2>
+                    <p>Construo interfaces digitais em aplicativos web, aplicando conhecimentos em <strong>usabilidade</strong> e <strong>experiência do usuário</strong>.</p>
+                </div>
+            </div>
+
+            <div class="introducao-botoes">
+                <a href="/assets/pdf/curriculo-matheusqueirozds.pdf" class="botao" download="curriculo-matheusqueirozds.pdf" type="application/pdf">Baixar CV /></a>
+                <a href="/assets/formulario.html" class="botao secundario">Fale comigo /></a>
+            </div>
         </div>
     </main>
 

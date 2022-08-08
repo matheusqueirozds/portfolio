@@ -1,0 +1,55 @@
+.header-bg {
+    background-color: var(--color-8);
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header-menu a {
+    padding: 0px 14px;
+}
+
+.header-menu a::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 0;
+    transition: 0.5s;
+}
+
+.header-menu a:hover::after {
+    width: 100%;
+    background-color: var(--color-5);
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header-menu {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .header-menu a {
+        padding: 7px 14px;
+        background-color: var(--color-7);
+        border-radius: 10px;
+    }
+
+    .header-menu a::after {
+        display: none;
+    }
+}
