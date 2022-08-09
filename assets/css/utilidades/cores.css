@@ -6,7 +6,8 @@
     --color-5: #21bde9;
     --color-6: #444557;
     --color-7: #262837;
-    --color-8: #000000;
+    --color-8: #141414;
+    --color-9: #000000;
 }
 
 .color-1 {
@@ -39,4 +40,8 @@
 
 .color-8 {
     color: var(--color-8);
+}
+
+.color-9 {
+    color: var(--color-9);
 }

@@ -1,0 +1,35 @@
+.habilidades-bg {
+    background-color: var(--color-8);
+}
+
+.habilidades .titulo{
+    margin-bottom: 40px;
+}
+
+.skill {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.skill-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-lista li {
+    background-color: var(--color-7);
+    border-radius: 10px;
+    height: 120px;
+    width: 200px;
+    padding: 30px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.skill-lista li:hover {
+    opacity: 1;
+}

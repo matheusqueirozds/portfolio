@@ -1,0 +1,41 @@
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sobre-content img {
+    width: 250px;
+}
+
+.sobre-texto {
+    max-width: 720px;
+}
+
+.sobre-texto :first-of-type {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .sobre .titulo {
+        margin-bottom: 20px;
+    }
+
+    .sobre-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sobre-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sobre-content img {
+        height: 200px;
+        width: 200px;
+    }
+}

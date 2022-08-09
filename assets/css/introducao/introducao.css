@@ -1,6 +1,5 @@
 .introducao {
-    padding-top: var(--padding);
-    padding-bottom: var(--padding);
+    padding-top: 198px;
 }
 
 .introducao-titulo {
@@ -17,7 +16,7 @@
 }
 
 .introducao-imagem img {
-  max-width: none;
+    max-width: none;
 }
 
 .introducao-conteudo p {
@@ -29,6 +28,10 @@
 }
 
 @media screen and (max-width: 800px) {
+    .introducao {
+        padding-top: 148px;
+    }
+
     .introducao-titulo {
         text-align: left;
         margin-bottom: 30px;
@@ -46,5 +49,17 @@
 
     .introducao-conteudo p {
         max-width: max-content;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .introducao {
+        padding-top: 153px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .introducao {
+        padding-top: 202px;
     }
 }

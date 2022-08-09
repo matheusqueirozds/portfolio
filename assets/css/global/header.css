@@ -1,55 +1,58 @@
 .header-bg {
-    background-color: var(--color-8);
+    background-color: var(--color-9);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
 }
 
 .header {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.header-menu {
+.menu {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.header-menu a {
-    padding: 0px 14px;
+.menu a {
+    padding: 12px;
+    transition: 0.3s;
 }
 
-.header-menu a::after {
-    display: block;
-    content: "";
-    height: 4px;
-    width: 0;
-    transition: 0.5s;
+.menu a:hover {
+    color: var(--color-3);
 }
 
-.header-menu a:hover::after {
-    width: 100%;
-    background-color: var(--color-5);
+.js .menu a.ativo {
+    color: var(--color-1);
 }
 
 @media screen and (max-width: 600px) {
     .header {
-        align-items: center;
         justify-content: center;
         gap: 20px;
     }
 
-    .header-menu {
+    .menu {
         justify-content: center;
         gap: 10px;
     }
 
-    .header-menu a {
+    .menu a {
         padding: 7px 14px;
         background-color: var(--color-7);
         border-radius: 10px;
     }
 
-    .header-menu a::after {
+    .menu a::after {
         display: none;
     }
 }

@@ -15,3 +15,12 @@
 
 /* SOBRE */
 @import url(/assets/css/sobre/sobre.css);
+
+/* HABILIDADES */
+@import url(/assets/css/habilidades/habilidades.css);
+
+/* PROJETOS */
+@import url(/assets/css/projetos/projetos.css);
+
+/* CONTATO */
+@import url(/assets/css/contato/contato.css);
