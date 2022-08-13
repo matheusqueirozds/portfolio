@@ -134,16 +134,44 @@
     .skill div {
         align-items: flex-start;
         gap: 0;
-        width: 640px;
+        width: 860px;
     }
 
     .skill div img {
         display: none;
     }
 
+    .skills-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     .js .js-tabcontent p.ativo {
-        height: 80px;
+        height: 60px;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .skill div {
+        max-width: 760px;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skills-list li {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .skill div {
+        max-width: 640px;
+    }
+
+    .skills-list li {
+        max-width: 200px;
     }
 }
 
@@ -158,17 +186,14 @@
 
     .skill div {
         align-items: center;
-    }
-
-    .skill .descriptions-list {
-        display: none;
+        max-width: 550px;
     }
 
     .skills-list li {
         display: flex;
         align-items: center;
         height: 70px;
-        width: 160px;
+        max-width: 170px;
         word-break: break-all;
     }
 
@@ -177,8 +202,31 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .skill div {
+        max-width: 490px;
+    }
+
+    .skills-list li {
+        max-width: 150px;
+    }
+}
+
 @media screen and (max-width: 550px) {
+    .skill div {
+        align-items: center;
+        max-width: 340px;
+    }
+
     .skills-list {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-list li {
+        max-width: 160px;
+    }
+
+    .js .js-tabcontent p.ativo {
+        height: 90px;
     }
 }
