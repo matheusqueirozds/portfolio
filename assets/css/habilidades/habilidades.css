@@ -13,7 +13,7 @@
     gap: 40px;
 }
 
-.skill > div {
+.skill div {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -22,8 +22,16 @@
     width: 300px;
 }
 
-.skill > div img {
+.skill div img {
     margin-bottom: 20px;
+}
+
+.hard.skill {
+    margin-bottom: 80px;
+}
+
+.soft.skill {
+    flex-direction: row-reverse;
 }
 
 .skill-titulo {
@@ -77,10 +85,6 @@
     height: 100%;
 }
 
-.descriptions-list p {
-    margin-bottom: 10px;
-}
-
 .descriptions-list p:last-child {
     display: none;
 }
@@ -94,7 +98,7 @@
     animation: show 0.7s forwards;
 }
 
-.js .js-tabcontent p > strong {
+.js .js-tabcontent p strong {
     color: var(--color-5);
 }
 
@@ -115,7 +119,8 @@
         margin-bottom: 30px;
     }
 
-    .skill {
+    .hard.skill,
+    .soft.skill {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -126,8 +131,19 @@
         margin-bottom: 10px;
     }
 
-    .skill > div img {
+    .skill div {
+        align-items: flex-start;
+        gap: 0;
+        width: 640px;
+    }
+
+    .skill div img {
         display: none;
+    }
+
+    .js .js-tabcontent p.ativo {
+        height: 80px;
+        width: 100%;
     }
 }
 
@@ -136,11 +152,24 @@
         margin-bottom: 20px;
     }
 
+    .hard.skill {
+        margin-bottom: 40px;
+    }
+
+    .skill div {
+        align-items: center;
+    }
+
+    .skill .descriptions-list {
+        display: none;
+    }
+
     .skills-list li {
         display: flex;
         align-items: center;
         height: 70px;
-        width: 150px;
+        width: 160px;
+        word-break: break-all;
     }
 
     .skills-list li::before {
