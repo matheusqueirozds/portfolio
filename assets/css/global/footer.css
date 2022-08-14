@@ -26,3 +26,19 @@
 .footer .copy {
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-content,
+    .footer-content > a {
+        margin-bottom: 20px;
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+}

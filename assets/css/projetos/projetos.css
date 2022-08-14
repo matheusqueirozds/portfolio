@@ -89,3 +89,10 @@
 .projeto-card figcaption p:first-of-type {
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    .projeto-card figure {
+        height: 247px;
+        max-width: 345px;
+    }
+}

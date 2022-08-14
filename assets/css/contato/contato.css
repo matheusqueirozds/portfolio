@@ -16,6 +16,33 @@
     transform: rotateX(180deg);
 }
 
-.contato .titulo{
+.contato .titulo {
     margin-bottom: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    .contato-bg::before {
+        top: -90px;
+        height: 93px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contato-bg::before {
+        top: -60px;
+        height: 63px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contato-bg {
+        padding: var(--padding2) 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contato-bg::before {
+        top: -40px;
+        height: 43px;
+    }
 }
