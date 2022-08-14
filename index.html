@@ -36,7 +36,7 @@
         <div class="header">
             <a href="/index.html"><img src="/assets/img/logo.svg"></a>
 
-            <nav>
+            <nav class="js-menu">
                 <ul class="menu font-1-m">
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
@@ -94,7 +94,7 @@
         </div>
     </section>
 
-    <section class="habilidades-bg color-1 font-1-s" id="habilidades">
+    <section class="habilidades-bg color-1" id="habilidades">
         <div class="habilidades container">
             <h2 class="titulo">Habilidades</h2>
 
@@ -175,7 +175,7 @@
                         <figcaption>
                             <div class="projeto-card-texto">
                                 <p>E-commerce baseado no universo de Harry Potter.</p>
-                                <p>UI Design · HTML · CSS</p>
+                                <p>UI Design · HTML · CSS · JavaScript</p>
                             </div>
                             <a href="https://vassourax.vercel.app/" target="_blank" rel="noopener noreferrer" class="botao secundario">Visualizar projeto</a>
                         </figcaption>
@@ -184,7 +184,7 @@
 
                 <div class="projeto-card">
                     <figure>
-                        <img src="/assets/img/banco-logo.png" height="50" width="50">
+                        <img src="/assets/img/banco-logo.svg" width="50" height="50">
                         <figcaption>
                             <div class="projeto-card-texto">
                                 <p>Landing Page de um banco digital.</p>
@@ -197,7 +197,7 @@
 
                 <div class="projeto-card">
                     <figure>
-                        <img src="/assets/img/vassourax-logo.svg" width="50" height="50">
+                        <img src="/assets/img/af-logo.svg" width="50" height="50">
                         <figcaption>
                             <div class="projeto-card-texto">
                                 <p>Página com informações sobre animais.</p>
@@ -211,9 +211,31 @@
         </div>
     </section>
 
-    <section class="contato-bg" id="contato">
+    <section class="contato-bg color-1 " id="contato">
         <div class="contato container">
             <h2 class="titulo">Contato</h2>
+
+            <form class="form contato-form">
+                <div>
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Luke Skywalker">
+                </div>
+
+                <div>
+                    <label for="whatsapp">WhatsApp</label>
+                    <input type="tel" name="whatsapp" id="whatsapp" placeholder="(XX) 9XXXX-XXXX">
+                </div>
+
+                <div class="col-2">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="lukeskywalker@email.com">
+                </div>
+
+                <div class="col-2">
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message" rows="5" placeholder="O que você precisa?"></textarea>
+                </div>
+            </form>
         </div>
     </section>
 

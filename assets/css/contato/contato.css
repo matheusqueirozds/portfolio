@@ -1,0 +1,21 @@
+.contato-bg {
+    background-color: var(--color-8);
+    position: relative;
+    padding: var(--padding1) 10px var(--padding2) 10px;
+}
+
+.contato-bg::before {
+    position: absolute;
+    top: -120px;
+    right: 0;
+    display: block;
+    content: "";
+    height: 123px;
+    width: 100%;
+    background: url("/assets//img//borda.svg") no-repeat;
+    transform: rotateX(180deg);
+}
+
+.contato .titulo{
+    margin-bottom: 40px;
+}

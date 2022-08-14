@@ -100,3 +100,19 @@ function initTabMenuSoftSkills() {
     }
 }
 initTabMenuSoftSkills();
+
+const linksInternos = document.querySelectorAll(".js-menu a[href^='#']");
+
+linksInternos.forEach((link) => {
+    link.addEventListener("click", scrollToSection);
+});
+
+function scrollToSection(e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+    const section = document.querySelector(href);
+    const topo = section.offsetTop - 88;
+    scrollTo({ top: topo, behavior: "smooth" });
+
+    /*     section.scrollIntoView({ behavior: "smooth", block: "start" }); */
+}

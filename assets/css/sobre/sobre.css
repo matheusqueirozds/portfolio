@@ -1,3 +1,8 @@
+.sobre-bg {
+    padding-top: var(--padding2);
+    padding-bottom: var(--padding3);
+}
+
 .sobre-content {
     display: flex;
     align-items: center;

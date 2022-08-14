@@ -1,3 +1,8 @@
+.projetos-bg {
+    padding-top: var(--padding3);
+    padding-bottom: var(--padding4);
+}
+
 .projetos-bg .container {
     max-width: 100%;
     margin: 0 auto;
@@ -22,7 +27,7 @@
 }
 
 .projeto-card:nth-child(1) {
-    background-color: #000;
+    background-color: var(--color-8);
 }
 
 .projeto-card:nth-child(2) {
@@ -30,7 +35,7 @@
 }
 
 .projeto-card:nth-child(3) {
-    background-color: #ee5544;
+    background-color: #ffbb55;
 }
 
 .projeto-card figure {
@@ -47,10 +52,10 @@
 }
 
 .projeto-card figure img {
+    align-self: center;
     height: auto;
-    width: 100%;
+    width: 80%;
     padding: 20px;
-    transform: scale(1);
     transition: ease-in-out 0.25s;
 }
 
@@ -70,7 +75,7 @@
     width: 100%;
     z-index: 1;
 
-    background-color: #222;
+    background-color: var(--color-7);
     padding: 20px;
     border-radius: 12px;
 
@@ -79,4 +84,8 @@
 
 .projeto-card figcaption:hover {
     opacity: 1;
+}
+
+.projeto-card figcaption p:first-of-type {
+    margin-bottom: 20px;
 }

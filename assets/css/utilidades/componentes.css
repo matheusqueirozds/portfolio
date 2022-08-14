@@ -1,7 +1,6 @@
 /* CONTAINER */
 .container {
     max-width: 1200px;
-    padding: var(--padding) 10px;
     margin: 0 auto;
 }
 

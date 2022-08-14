@@ -1,10 +1,16 @@
 :root {
-    --padding: 60px;
+    --padding1: 30px;
+    --padding2: 60px;
+    --padding3: 120px;
+    --padding4: 160px;
 }
 
 @media screen and (max-width: 800px) {
     :root {
-        --padding: 30px;
+        --padding1: 15px;
+        --padding2: 30px;
+        --padding3: 60px;
+        --padding4: 80px;
     }
 }
 
