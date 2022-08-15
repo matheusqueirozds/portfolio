@@ -1,7 +1,7 @@
 .habilidades-bg {
     background-color: var(--color-8);
     position: relative;
-    padding: var(--padding1) 10px
+    padding: var(--padding1) 10px;
 }
 
 .habilidades-bg::before {
@@ -285,7 +285,11 @@
         max-width: 160px;
     }
 
-    .js .js-tabcontent p.ativo {
-        height: 90px;
+    .js .hard.skill .js-tabcontent p.ativo {
+        height: 7.5rem;
+    }
+
+    .js .soft.skill .js-tabcontent p.ativo {
+        height: 6rem;
     }
 }
