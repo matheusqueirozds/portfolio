@@ -1,5 +1,5 @@
 .introducao {
-    padding-top: 198px;
+    padding-top: 162px;
 }
 
 .introducao-titulo {
@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 800px) {
     .introducao {
-        padding-top: 148px;
+        padding-top: 152px;
     }
 
     .introducao-titulo {
@@ -54,12 +54,6 @@
 
 @media screen and (max-width: 600px) {
     .introducao {
-        padding-top: 153px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .introducao {
-        padding-top: 202px;
+        padding-top: 104px;
     }
 }
