@@ -1,6 +1,6 @@
 # Portfólio
 
-Portfólio criado com o intuito de mostrar para o meu visitante quais experiências prévias eu tive, e ser um espaço onde as pessoas poderão me encontrar. Nesse projeto mostrarei minhas habilidades que você adquiridas em HTML e CSS. Assim que possível, disponibilizarei [aqui](gray-eggs.surge.sh) o link para acessar o site do projeto finalizado.
+Portfólio criado com o intuito de mostrar aos recrutadores quais experiências prévias eu tive, e ser um espaço onde as pessoas poderão me encontrar. Nesse projeto mostrarei minhas habilidades adquiridas através do aprendizado contínuo. Clique [aqui](https://matheusqueirozds.vercel.app/) para acessar o projeto online.
 
 #
 
@@ -12,23 +12,16 @@ Portfólio criado com o intuito de mostrar para o meu visitante quais experiênc
 
 ## Funcionalidades
 
--   Semântica
+- Semântica
+- Responsividade
+- Acessibilidade
+- Site performático
 
 #
 
 ## Aprendizados
 
-Nesse projeto eu pude colocar em prática todo o conhecimento em HTML5, focando na semântica, acessibilidade e SEO. No começo tive dificuldades em adaptar o projeto à telas menores, e precisei cria uma interface mobile para refatorar o código de forma que essa adaptação fizesse sentido.
-
-#
-
-## Melhorias que serão implementadas
-
-Sempre que possível, farei alterações nesse projeto de forma periódica, visando pontos importantes como:
-
--   Código limpo
--   Melhorias de performance
--   Testes de acessibilidade
+Nesse projeto eu pude colocar em prática conhecimentos em HTML, CSS E JavaScript. No começo tive dificuldades em adaptar o projeto à telas menores, e precisei criar uma interface mobile para refatorar o código de forma que essa adaptação fizesse sentido.
 
 #
 
@@ -36,7 +29,7 @@ Sempre que possível, farei alterações nesse projeto de forma periódica, visa
 
 O site é composto por 5 seções diferentes:
 
--   Home: Breve apresentação do site, destacando minha habilidades como designer e desenvolvedor;
+-   Introdução: Breve apresentação do site, destacando minha habilidades como designer e desenvolvedor;
 -   Sobre: Descrição resumida sobre quem sou;
 -   Habilidades: Apresentação dos meus conhecimentos em hard skills e soft skills;
 -   Projetos: Alguns projetos desenvolvidos e com link direto para o site dos mesmos;
@@ -46,13 +39,7 @@ O site é composto por 5 seções diferentes:
 
 ## Stacks utilizadas
 
-HTML e CSS
-
-#
-
-### Link Surge
-
-[Clique aqui](gray-eggs.surge.sh) para acessar o projeto online!
+HTML, CSS e JavaScript. Não foram utilizados frameworks ou plugins nesse projeto.
 
 #
 
