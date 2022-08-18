@@ -1,7 +1,0 @@
-# Ignore todos os arquivos PHP
-*.php
-
-# Ignore a pasta PHPMailer
-PHPMailer
-.vscode
-
