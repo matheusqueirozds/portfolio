@@ -1,0 +1,46 @@
+.footer-bg {
+    background: $color-9;
+    padding: var(--padding1);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        @include d(m1) {
+            margin-bottom: 20px;
+        }
+    }
+
+    @include d(m1) {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+.footer-social {
+    @include d(m1) {
+        text-align: center;
+    }
+
+    h3 {
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    a {
+        padding: 5px 10px;
+    }
+}
+
+.footer .copy {
+    text-align: center;
+}

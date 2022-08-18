@@ -1,12 +1,13 @@
+@import "tipografia";
+@import "responsivo";
+
 :root {
     --padding1: 30px;
     --padding2: 60px;
     --padding3: 120px;
     --padding4: 160px;
-}
 
-@media screen and (max-width: 800px) {
-    :root {
+    @include d(t1) {
         --padding1: 15px;
         --padding2: 30px;
         --padding3: 60px;
@@ -18,6 +19,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: $font-1;
 }
 
 img {
@@ -38,8 +43,6 @@ ul {
     list-style: none;
 }
 
-h1,
-h2,
-h3 {
+h1 {
     font-weight: normal;
 }

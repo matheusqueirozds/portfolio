@@ -1,0 +1,27 @@
+@import "variaveis-e-mixins";
+
+/* GLOBAL */
+@import "global";
+@import "header";
+@import "footer";
+
+/* UTILIDADES */
+@import "componentes";
+@import "cores";
+@import "formulario";
+@import "tipografia";
+
+/* INTRODUÇÃO */
+@import "introducao";
+
+/* SOBRE */
+@import "sobre";
+
+/* HABILIDADES */
+@import "habilidades";
+
+/* PROJETOS */
+@import "projetos";
+
+/* CONTATO */
+@import "contato";

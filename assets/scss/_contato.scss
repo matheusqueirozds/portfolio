@@ -1,0 +1,42 @@
+.contato-bg {
+    background: $color-8;
+    position: relative;
+    padding: var(--padding1) 10px var(--padding2) 10px;
+
+    @include d(m1) {
+        padding: var(--padding2) 10px;
+    }
+
+    &::before {
+        position: absolute;
+        top: -120px;
+        right: 0;
+        display: block;
+        content: "";
+        height: 123px;
+        width: 100%;
+        background: url("/assets//img//borda.svg") no-repeat;
+        transform: rotateX(180deg);
+
+        @include d(c2) {
+            top: -90px;
+            height: 93px;
+        }
+
+        @include d(t1) {
+            top: -60px;
+            height: 63px;
+        }
+
+        @include d(m2) {
+            top: -40px;
+            height: 43px;
+        }
+    }
+}
+
+.contato {
+    .titulo {
+        margin-bottom: 40px;
+    }
+}

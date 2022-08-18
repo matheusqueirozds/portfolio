@@ -1,0 +1,61 @@
+@import "tipografia";
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .titulo {
+        text-align: center;
+        text-transform: uppercase;
+
+        @include d(m1) {
+            text-align: left;
+        }
+
+        &::before {
+            display: inline-block;
+            content: "";
+            height: 17px;
+            width: 4px;
+            background: $color-5;
+            margin-right: 4px;
+        }
+    }
+}
+
+/* BOTÃO */
+.botao {
+    display: inline-block;
+    background: $color-1;
+    color: $color-9;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 3px solid $color-9;
+    @include font-1-d(16b);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    max-width: max-content;
+    cursor: pointer;
+
+    @include d(m1) {
+        padding: 12px 16px;
+        font-size: 1rem;
+    }
+
+    &:hover {
+        background: linear-gradient($color-8, $color-9);
+        color: $color-1;
+    }
+}
+
+.botao.secundario {
+    background: linear-gradient($color-6, $color-7);
+    color: $color-1;
+
+    &:hover {
+        background: linear-gradient($color-8, $color-9);
+        color: $color-1;
+    }
+}

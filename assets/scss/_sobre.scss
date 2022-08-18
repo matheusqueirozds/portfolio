@@ -1,0 +1,46 @@
+.sobre-bg {
+    padding-top: var(--padding2);
+    padding-bottom: var(--padding3);
+}
+
+.sobre {
+    .titulo {
+        @include d(t1) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    @include d(t1) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @include d(m1) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    img {
+        width: 250px;
+
+        @include d(m1) {
+            height: 200px;
+            width: 200px;
+        }
+    }
+}
+
+.sobre-texto {
+    max-width: 720px;
+
+    &:first-of-type {
+        margin-bottom: 20px;
+    }
+}
