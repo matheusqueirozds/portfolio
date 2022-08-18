@@ -10,8 +10,6 @@ $font-2: monospace;
         font-weight: 400;
         font-size: 1rem;
         line-height: 1.5;
-    } @else if $size==16b {
-        font-weight: 600;
     } @else if $size==18 {
         font-weight: 400;
         font-size: 1.125rem;

@@ -422,12 +422,12 @@ h1 {
 /* BOTÃO */
 .botao {
   display: inline-block;
-  background: #fff;
+  background: none;
   color: #000;
   padding: 12px 20px;
   border-radius: 10px;
   border: 3px solid #000;
-  font-weight: 600;
+  font: 600 1rem/1 "Poppins", sans-serif;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   max-width: -webkit-max-content;
@@ -438,24 +438,32 @@ h1 {
 @media only screen and (max-width: 600px) {
   .botao {
     padding: 12px 16px;
-    font-size: 1rem;
   }
 }
 .botao:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#141414), to(#000));
-  background: linear-gradient(#141414, #000);
+  background: -webkit-gradient(linear, left top, left bottom, from(#444557), to(#262837));
+  background: linear-gradient(#444557, #262837);
   color: #fff;
+  opacity: 0.9;
 }
-
 .botao.secundario {
   background: -webkit-gradient(linear, left top, left bottom, from(#444557), to(#262837));
   background: linear-gradient(#444557, #262837);
   color: #fff;
+  opacity: 1;
 }
 .botao.secundario:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#141414), to(#000));
-  background: linear-gradient(#141414, #000);
+  opacity: 0.9;
+}
+.botao.terciario {
+  border-color: #ccc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#444557), to(#262837));
+  background: linear-gradient(#444557, #262837);
   color: #fff;
+  opacity: 1;
+}
+.botao.terciario:hover {
+  opacity: 0.9;
 }
 
 .color-1 {
