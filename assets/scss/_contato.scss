@@ -1,48 +1,42 @@
 .contato-bg {
-    background-color: var(--color-8);
+    background: $color-8;
     position: relative;
     padding: var(--padding1) 10px var(--padding2) 10px;
-}
 
-.contato-bg::before {
-    position: absolute;
-    top: -120px;
-    right: 0;
-    display: block;
-    content: "";
-    height: 123px;
-    width: 100%;
-    background: url("/assets//img//borda.svg") no-repeat;
-    transform: rotateX(180deg);
-}
-
-.contato .titulo {
-    margin-bottom: 40px;
-}
-
-@media screen and (max-width: 900px) {
-    .contato-bg::before {
-        top: -90px;
-        height: 93px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .contato-bg::before {
-        top: -60px;
-        height: 63px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .contato-bg {
+    @include d(m1) {
         padding: var(--padding2) 10px;
     }
+
+    &::before {
+        position: absolute;
+        top: -120px;
+        right: 0;
+        display: block;
+        content: "";
+        height: 123px;
+        width: 100%;
+        background: url("/assets//img//borda.svg") no-repeat;
+        transform: rotateX(180deg);
+
+        @include d(c2) {
+            top: -90px;
+            height: 93px;
+        }
+
+        @include d(t1) {
+            top: -60px;
+            height: 63px;
+        }
+
+        @include d(m2) {
+            top: -40px;
+            height: 43px;
+        }
+    }
 }
 
-@media screen and (max-width: 550px) {
-    .contato-bg::before {
-        top: -40px;
-        height: 43px;
+.contato {
+    .titulo {
+        margin-bottom: 40px;
     }
 }

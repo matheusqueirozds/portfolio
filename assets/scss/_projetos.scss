@@ -1,15 +1,15 @@
 .projetos-bg {
     padding-top: var(--padding3);
     padding-bottom: var(--padding4);
-}
 
-.projetos-bg .container {
-    max-width: 100%;
-    margin: 0 auto;
-}
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
 
-.projetos-bg .titulo {
-    margin-bottom: 40px;
+    .titulo {
+        margin-bottom: 40px;
+    }
 }
 
 .projetos {
@@ -24,75 +24,75 @@
     background-size: cover;
     background-position: center;
     border-radius: 12px;
-}
 
-.projeto-card:nth-child(1) {
-    background-color: var(--color-8);
-}
+    &:nth-child(1) {
+        background: $color-8;
+    }
 
-.projeto-card:nth-child(2) {
-    background-color: #ff914d;
-}
+    &:nth-child(2) {
+        background: #ff914d;
+    }
 
-.projeto-card:nth-child(3) {
-    background-color: #ffbb55;
-}
+    &:nth-child(3) {
+        background: #ffbb55;
+    }
 
-.projeto-card figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-    border-radius: 12px;
-    padding: 20px;
+        border-radius: 12px;
+        padding: 20px;
 
-    height: 287px;
-    width: 431px;
-    position: relative;
-}
+        height: 287px;
+        width: 431px;
+        position: relative;
 
-.projeto-card figure img {
-    align-self: center;
-    height: auto;
-    width: 80%;
-    padding: 20px;
-    transition: ease-in-out 0.25s;
-}
+        @include d(m1) {
+            height: 247px;
+            max-width: 345px;
+        }
 
-.projeto-card figcaption {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
+        img {
+            align-self: center;
+            height: auto;
+            width: 80%;
+            padding: 20px;
+            transition: ease-in-out 0.25s;
+        }
+    }
 
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
+    figcaption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
 
-    background-color: var(--color-7);
-    padding: 20px;
-    border-radius: 12px;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
 
-    transition: ease-in-out 0.45s;
-}
+        background: $color-7;
+        padding: 20px;
+        border-radius: 12px;
 
-.projeto-card figcaption:hover {
-    opacity: 1;
-}
+        transition: ease-in-out 0.45s;
 
-.projeto-card figcaption p:first-of-type {
-    margin-bottom: 20px;
-}
+        &:hover {
+            opacity: 1;
+        }
 
-@media screen and (max-width: 600px) {
-    .projeto-card figure {
-        height: 247px;
-        max-width: 345px;
+        p {
+            &:first-of-type {
+                margin-bottom: 20px;
+            }
+        }
     }
 }

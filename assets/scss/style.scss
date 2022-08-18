@@ -1,10 +1,11 @@
+@import "variaveis-e-mixins";
+
 /* GLOBAL */
 @import "global";
 @import "header";
 @import "footer";
 
 /* UTILIDADES */
-@import "animacao";
 @import "componentes";
 @import "cores";
 @import "formulario";

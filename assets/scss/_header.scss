@@ -1,20 +1,22 @@
+@import "cores";
+
 .header-bg {
-    background-color: var(--color-9);
+    background: $color-9;
     padding: 1rem;
     position: fixed;
     width: 100%;
     z-index: 99;
     top: 0;
-}
 
-.header {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    .header {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 
 .menu {
@@ -22,55 +24,51 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+
+    a {
+        padding: 0.5rem;
+        transition: 0.3s;
+
+        &:hover {
+            color: $color-3;
+            background: $color-7;
+        }
+    }
 }
 
-.menu a {
-    padding: 0.5rem;
-    transition: 0.3s;
-}
+.js .menu {
+    a.ativo {
+        color: $color-1;
+        background: $color-7;
+    }
 
-.menu a:hover {
-    color: var(--color-3);
-    background-color: var(--color-7);
-}
-
-.js .menu a.ativo {
-    color: var(--color-1);
-    background-color: var(--color-7);
-}
-
-#btn-mobile {
-    display: none;
-}
-
-@media screen and (max-width: 600px) {
-    .js .menu {
+    @include d(m1) {
         display: block;
         position: absolute;
         width: 100%;
         top: 57px;
         right: 0;
-        background-color: var(--color-9);
+        background: $color-9;
         z-index: 1000;
 
         height: 0;
         transition: 0.6s;
         visibility: hidden;
         overflow-y: hidden;
-    }
 
-    .js #nav.ativo .menu {
-        height: calc(100vh - 57px);
-        visibility: visible;
-        overflow-y: auto;
+        a {
+            padding: 1rem 0;
+            margin: 0 1rem;
+            border-bottom: 2px solid rgba(68, 69, 87, 0.5);
+        }
     }
+}
 
-    .js .menu a {
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(68, 69, 87, 0.5);
-    }
+#btn-mobile {
+    display: none;
+}
 
+@include d(m1) {
     .js #btn-mobile {
         display: flex;
         gap: 0.5rem;
@@ -84,31 +82,38 @@
         display: block;
         border-top: 2px solid;
         width: 20px;
-        color: var(--color-1);
+        color: $color-1;
+
+        &::after,
+        &::before {
+            display: block;
+            content: "";
+            width: 20px;
+            height: 2px;
+            background: currentColor;
+            margin-top: 5px;
+            transition: 0.3s;
+            position: relative;
+        }
     }
 
-    .js #hamburger::after,
-    .js #hamburger::before {
-        display: block;
-        content: "";
-        width: 20px;
-        height: 2px;
-        background-color: currentColor;
-        margin-top: 5px;
-        transition: 0.3s;
-        position: relative;
-    }
+    .js #nav.ativo {
+        .menu {
+            height: calc(100vh - 57px);
+            visibility: visible;
+            overflow-y: auto;
+        }
 
-    .js #nav.ativo #hamburger {
-        border-top-color: transparent;
-    }
+        #hamburger {
+            border-top-color: transparent;
+            &::before {
+                transform: rotate(135deg);
+            }
 
-    .js #nav.ativo #hamburger::before {
-        transform: rotate(135deg);
-    }
-
-    .js #nav.ativo #hamburger::after {
-        transform: rotate(-135deg);
-        top: -7px;
+            &::after {
+                transform: rotate(-135deg);
+                top: -7px;
+            }
+        }
     }
 }

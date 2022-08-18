@@ -1,3 +1,5 @@
+@import "tipografia";
+
 .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -5,49 +7,44 @@
     gap: 20px;
     max-width: 800px;
     margin: 0 auto;
-}
 
-.form label {
-    display: block;
-    margin-bottom: 4px;
-}
-
-.form ::placeholder {
-    color: #9c9c9c;
-}
-
-.form .col-2 {
-    grid-column: 1/-1;
-}
-
-.form input[type="text"],
-.form input[type="tel"],
-.form input[type="email"],
-.form textarea {
-    font: 400 1rem/1.5 var(--font-1);
-    background: #f7f7f7;
-    border: 1px solid var(--color-6);
-    padding: 12px;
-    border-radius: 4px;
-    width: 100%;
-}
-
-.form input[type="text"]:focus,
-.form input[type="tel"]:focus,
-.form input[type="email"]:focus,
-.form textarea:focus {
-    outline: none;
-    border-color: var(--color-2);
-    background: var(--color-1);
-    box-shadow: 0 0 0 2px var(--color-5);
-}
-
-@media screen and (max-width: 600px) {
-    .form {
+    @include d(m1) {
         grid-template-columns: 1fr;
     }
 
-    .form .col-2 {
-        grid-column: 1;
+    label {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    &::placeholder {
+        color: #9c9c9c;
+    }
+
+    .col-2 {
+        grid-column: 1/-1;
+
+        @include d(m1) {
+            grid-column: 1;
+        }
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        @include font-1-d(16);
+        background: #f7f7f7;
+        border: 1px solid $color-6;
+        padding: 12px;
+        border-radius: 4px;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+            border-color: $color-2;
+            background: $color-1;
+            box-shadow: 0 0 0 2px $color-5;
+        }
     }
 }
