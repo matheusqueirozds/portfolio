@@ -7,9 +7,18 @@
     padding-left: 10px;
     padding-right: 10px;
 
-    .titulo {
+    h2 {
         text-align: center;
         text-transform: uppercase;
+        margin-bottom: 40px;
+
+        @include d(c1) {
+            margin-bottom: 30px;
+        }
+
+        @include d(t2) {
+            margin-bottom: 20px;
+        }
 
         @include d(m1) {
             text-align: left;
@@ -69,4 +78,8 @@
             opacity: 0.9;
         }
     }
+}
+
+span.destaque {
+    font-weight: bold;
 }

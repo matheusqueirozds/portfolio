@@ -61,20 +61,6 @@
     }
 }
 
-.habilidades {
-    .titulo {
-        margin-bottom: 40px;
-
-        @include d(c1) {
-            margin-bottom: 30px;
-        }
-
-        @include d(t2) {
-            margin-bottom: 20px;
-        }
-    }
-}
-
 .skill {
     display: flex;
     align-items: flex-start;
@@ -269,7 +255,7 @@
                 }
             }
 
-            strong {
+            span {
                 color: $color-5;
             }
         }

@@ -3,14 +3,6 @@
     padding-bottom: var(--padding3);
 }
 
-.sobre {
-    .titulo {
-        @include d(t1) {
-            margin-bottom: 20px;
-        }
-    }
-}
-
 .sobre-content {
     display: flex;
     align-items: center;

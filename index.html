@@ -39,6 +39,8 @@
 
     <link rel="canonical" href="https://matheusqueirozds.dev">
     <link rel="manifest" href="/manifest.json">
+    <link rel="preload" as="script" href="/assets/js/script.js">
+    <link rel="preload" as="script" href="/assets/js/formulario.js">
 
     <script>document.documentElement.className += ' js'</script>
 
@@ -69,14 +71,14 @@
     <main class="introducao-bg">
         <div class="introducao container">
             <div class="introducao-titulo">
-                <h1>Olá! Eu sou o <strong>Matheus Queiroz</strong></h1>
+                <h1>Olá! Eu sou o <span class="destaque">Matheus Queiroz</span></h1>
                 <p>Desenvolvedor Frontend e UI Designer.</p>
             </div>
 
             <div class="introducao-informacoes">
                 <div class="introducao-conteudo">
                     <h2 class="font-1-24b">Dev Frontend</h2>
-                    <p>Desenvolvo experiências de navegação através de projetos únicos, utilizando <strong>boas práticas</strong> com foco em <strong>performance</strong>.</p>
+                    <p>Desenvolvo experiências de navegação através de projetos únicos, utilizando <span class="destaque">boas práticas</span> com foco em <span class="destaque">performance</span>.</p>
                 </div>
 
                 <picture class="introducao-imagem">
@@ -85,7 +87,7 @@
 
                 <div class="introducao-conteudo">
                     <h2 class="font-1-24b">UI Designer</h2>
-                    <p>Construo interfaces digitais em aplicativos web, aplicando conhecimentos em <strong>usabilidade</strong> e <strong>experiência do usuário</strong>.</p>
+                    <p>Construo interfaces digitais em aplicativos web, aplicando conhecimentos em <span class="destaque">usabilidade</span> e <span class="destaque">experiência do usuário</span>.</p>
                 </div>
             </div>
 
@@ -98,7 +100,7 @@
 
     <section class="sobre-bg" id="sobre">
         <div class="sobre container">
-            <h2 class="titulo">Sobre</h2>
+            <h2>Sobre</h2>
 
             <div class="sobre-content">
                 <picture>
@@ -106,7 +108,7 @@
                 </picture>
 
                 <div class="sobre-texto">
-                    <p>Soteropolitano, iniciei minha trajetória na programação desenvolvendo projetos pessoais em HTML e CSS, além de aplicar conhecimentos de UI Design. Atualmente estudo <strong>Desenvolvimento Web FullStack</strong> na Labenu.</p>
+                    <p>Soteropolitano, iniciei minha trajetória na programação desenvolvendo projetos pessoais em HTML e CSS, além de aplicar conhecimentos de UI Design. Atualmente estudo <span class="destaque">Desenvolvimento Web FullStack</span> na Labenu.</p>
                     <p>Gosto de codificar coisas para a web e de dar vida à novas ideias. Sou apaixonado pelo que faço e estou sempre aberto a trabalhar em equipe e aprender novas habilidades, frameworks ou tecnologias. Meus hoobies pessoais se resumem a ler muitos livros, desenhar e assistir filmes ou séries de ficção cientifica.</p>
                 </div>
             </div>
@@ -115,7 +117,7 @@
 
     <section class="habilidades-bg color-1" id="habilidades">
         <div class="habilidades container">
-            <h2 class="titulo">Habilidades</h2>
+            <h2>Habilidades</h2>
 
             <div class="hard skill">
                 <div>
@@ -123,15 +125,15 @@
                     <img src="/assets/img/hard-skill.svg" alt="Representação em desenho de um homem preto usando o computador e um fone de ouvido, modelo headset azul. A ideia dessa imagem é representar as habilidades técnicas de uma pessoa." width="200" height="175">
 
                     <div class="descriptions-list js-tabcontent">
-                        <p><strong>UI design</strong> é o processo de construção de interfaces com foco no usuário, aplicando conhecimentos sobre cores, tipografia, prototipagem, figma, etc.</p>
-                        <p><strong>HTML</strong> é uma linguagem baseada em marcação, onde marcamos os elementos para definir quais informações a página vai exibir.</p>
-                        <p><strong>CSS</strong> é uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas HTML.</p>
-                        <p><strong>Sass</strong> é um pré-processador CSS. É uma simples linguagem de script usada em arquivos Sass.</p>
-                        <p>O <strong>Git</strong> é um sistema de controle de versão que permite a criação e edição de arquivos. Já o <strong>GitHub</strong> é uma plataforma que armazena e/ou compartilha esses arquivos com a comunidade dev.</p>
-                        <p><strong>JavaScript</strong> é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
-                        <p><strong>React</strong> é uma biblioteca JavaScript, desenvolvida pelo Facebook, para construção de interfaces de usuário de forma mais eficiente e componentizada.</p>
-                        <p>O <strong>WordPress</strong> é um CMS que permite pegar qualquer site em HTML e torná-lo totalmente gerenciável, facilitando a vida dos clientes.</p>
-                        <p><strong>SEO</strong> é o conjunto de estratégias com o objetivo de potencializar e melhorar o posicionamento de um site nas páginas de resultados orgânicos.</p>
+                        <p><span class="destaque">UI design</span> é o processo de construção de interfaces com foco no usuário, aplicando conhecimentos sobre cores, tipografia, prototipagem, figma, etc.</p>
+                        <p><span class="destaque">HTML</span> é uma linguagem baseada em marcação, onde marcamos os elementos para definir quais informações a página vai exibir.</p>
+                        <p><span class="destaque">CSS</span> é uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas HTML.</p>
+                        <p><span class="destaque">Sass</span> é um pré-processador CSS. É uma simples linguagem de script usada em arquivos Sass.</p>
+                        <p>O <span class="destaque">Git</span> é um sistema de controle de versão que permite a criação e edição de arquivos. Já o <span class="destaque">GitHub</span> é uma plataforma que armazena e/ou compartilha esses arquivos com a comunidade dev.</p>
+                        <p><span class="destaque">JavaScript</span> é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
+                        <p><span class="destaque">React</span> é uma biblioteca JavaScript, desenvolvida pelo Facebook, para construção de interfaces de usuário de forma mais eficiente e componentizada.</p>
+                        <p>O <span class="destaque">WordPress</span> é um CMS que permite pegar qualquer site em HTML e torná-lo totalmente gerenciável, facilitando a vida dos clientes.</p>
+                        <p><span class="destaque">SEO</span> é o conjunto de estratégias com o objetivo de potencializar e melhorar o posicionamento de um site nas páginas de resultados orgânicos.</p>
                         <p>*passe o cursor do mouse no card para ler*</p>
                     </div>
                 </div>
@@ -155,15 +157,15 @@
                     <img src="/assets/img/soft-skill.svg" alt="Representação em desenho de um homem preto no universo, olhando para o planeta Terra. A ideia dessa imagem é representar as habilidades comportamentais de uma pessoa." width="200" height="175">
 
                     <div class="descriptions-list js-tabcontent">
-                        <p><strong>Adaptabilidade</strong> é a capacidade de lidar bem com situações novas ou cenários adversos, unindo a flexibilidade, coragem e a resiliência.</p>
-                        <p><strong>Atenção aos Detalhes</strong> é uma habilidade que permite concluir tarefas de trabalho com qualidade, precisão e consistência.</p>
-                        <p><strong>Colaboração</strong> é a capacidade de resolver coletivamente um problema ou fazer progresso em direção a um objetivo comum, sabendo lidar com as diferenças.</p>
-                        <p><strong>Criatividade</strong> é a habilidade de "pensar fora da caixinha", fazendo conexões entre assuntos aparentemente não relacionados e gerando soluções. </p>
-                        <p><strong>Comunicação Assertiva</strong> é a habilidade de saber se comunicar bem e ouvir atentamente o outro, sabendo contextualizar o que é transmitido.</p>
-                        <p><strong>Inteligência emocional</strong> é a capacidade de reconhecer e avaliar os sentimentos, tendo disposição e equilíbrio para lidar da melhor forma com eles.</p>
-                        <p><strong>Disposto a Aprender</strong> é ter a iniciativa em melhorar as habilidades atuais e aceitar novos desafios que possam acrescentar qualidade ao trabalho.</p>
-                        <p><strong>Gestão de Tempo</strong> é a habilidade de ajustar e organizar as diferentes atividades da rotina, sem comprometer diretamente a eficiência.</p>
-                        <p><strong>Ética</strong> é a capacidade de se comprometer consigo mesmo e com a empresa, sendo pontual, tendo compromisso com a verdade e pensando no coletivo.</p>
+                        <p><span class="destaque">Adaptabilidade</span> é a capacidade de lidar bem com situações novas ou cenários adversos, unindo a flexibilidade, coragem e a resiliência.</p>
+                        <p><span class="destaque">Atenção aos Detalhes</span> é uma habilidade que permite concluir tarefas de trabalho com qualidade, precisão e consistência.</p>
+                        <p><span class="destaque">Colaboração</span> é a capacidade de resolver coletivamente um problema ou fazer progresso em direção a um objetivo comum, sabendo lidar com as diferenças.</p>
+                        <p><span class="destaque">Criatividade</span> é a habilidade de "pensar fora da caixinha", fazendo conexões entre assuntos aparentemente não relacionados e gerando soluções. </p>
+                        <p><span class="destaque">Comunicação Assertiva</span> é a habilidade de saber se comunicar bem e ouvir atentamente o outro, sabendo contextualizar o que é transmitido.</p>
+                        <p><span class="destaque">Inteligência emocional</span> é a capacidade de reconhecer e avaliar os sentimentos, tendo disposição e equilíbrio para lidar da melhor forma com eles.</p>
+                        <p><span class="destaque">Disposto a Aprender</span> é ter a iniciativa em melhorar as habilidades atuais e aceitar novos desafios que possam acrescentar qualidade ao trabalho.</p>
+                        <p><span class="destaque">Gestão de Tempo</span> é a habilidade de ajustar e organizar as diferentes atividades da rotina, sem comprometer diretamente a eficiência.</p>
+                        <p><span class="destaque">Ética</span> é a capacidade de se comprometer consigo mesmo e com a empresa, sendo pontual, tendo compromisso com a verdade e pensando no coletivo.</p>
                         <p>*passe o cursor do mouse no card para ler*</p>
                     </div>
                 </div>
@@ -185,7 +187,7 @@
 
     <section class="projetos-bg" id="projetos">
         <div class="container">
-            <h2 class="titulo">Projetos</h2>
+            <h2>Projetos</h2>
 
             <div class="projetos font-1-18 color-1">
                 <div class="projeto-card">
@@ -232,7 +234,7 @@
 
     <section class="contato-bg color-1 " id="contato">
         <div class="contato container">
-            <h2 class="titulo">Contato</h2>
+            <h2>Contato</h2>
 
             <form class="form contato-form" action="enviar.php" method="post">
                 <div>
@@ -266,7 +268,7 @@
                 </div>
                 <div class="mensagem-erro">
                     <p>Erro no envio. 😭</p>
-                    <p>Você pode falar diretamente comigo através do e-mail em: <span>contato@matheusqueirozds.dev</span></p>
+                    <p>Você pode falar diretamente comigo através do e-mail em: <span class="destaque">contato@matheusqueirozds.dev</span></p>
                     <button class="botao terciario">Voltar</button>
                 </div>
                 </dic>
