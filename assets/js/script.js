@@ -134,7 +134,7 @@ function initMenuMobile() {
     }
 
     btnMobile.addEventListener("click", toggleMenu);
-    btnMobile.addEventListener("touchstart", toggleMenu);
+    btnMobile.addEventListener("touchstart", toggleMenu, { passive: true });
 
     function scrollToID(event) {
         event.preventDefault();

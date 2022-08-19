@@ -330,6 +330,10 @@ h1 {
 .footer-social a {
   padding: 5px 10px;
 }
+.footer-social a .rede-social {
+  width: 36px;
+  height: 36px;
+}
 
 .footer .copy {
   text-align: center;
