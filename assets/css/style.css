@@ -4,6 +4,7 @@
   font-family: "Poppins";
   src: url(/assets/fonts/Poppins/Poppins-Regular.ttf), url(/assets/fonts/Poppins/Poppins-Medium.ttf), url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
   font-style: normal;
+  font-display: swap;
 }
 .font-1-14 {
   font-weight: 400;
@@ -345,6 +346,7 @@ h1 {
   font-family: "Poppins";
   src: url(/assets/fonts/Poppins/Poppins-Regular.ttf), url(/assets/fonts/Poppins/Poppins-Medium.ttf), url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
   font-style: normal;
+  font-display: swap;
 }
 .font-1-14 {
   font-weight: 400;
@@ -516,6 +518,7 @@ h1 {
   font-family: "Poppins";
   src: url(/assets/fonts/Poppins/Poppins-Regular.ttf), url(/assets/fonts/Poppins/Poppins-Medium.ttf), url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
   font-style: normal;
+  font-display: swap;
 }
 .font-1-14 {
   font-weight: 400;
@@ -651,6 +654,7 @@ h1 {
   font-family: "Poppins";
   src: url(/assets/fonts/Poppins/Poppins-Regular.ttf), url(/assets/fonts/Poppins/Poppins-Medium.ttf), url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
   font-style: normal;
+  font-display: swap;
 }
 .font-1-14 {
   font-weight: 400;
