@@ -39,4 +39,55 @@
     .titulo {
         margin-bottom: 40px;
     }
+
+    &.ativo {
+        display: block;
+    }
+
+    .contato-mensagem {
+        display: none;
+
+        &.ativo {
+            display: grid;
+            place-items: center;
+            background: $color-8;
+            max-width: 800px;
+            height: 442px;
+            margin: 0 auto;
+            animation: popup 0.7s forwards;
+        }
+    }
+
+    .mensagem-enviada,
+    .mensagem-erro {
+        display: none;
+        &.ativo {
+            display: block;
+            text-align: center;
+
+            span {
+                display: inline-block;
+                color: $color-5;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .botao {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+@keyframes popup {
+    from {
+        transform: matrix3d(-30px, 0, 0);
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    to {
+        transform: matrix3d(30px, 0, 0);
+        opacity: 1;
+        transform: scale(1);
+    }
 }

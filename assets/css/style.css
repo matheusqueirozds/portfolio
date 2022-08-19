@@ -570,6 +570,7 @@ h1 {
   gap: 20px;
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
 }
 @media only screen and (max-width: 600px) {
   .form {
@@ -625,6 +626,10 @@ h1 {
   background: #fff;
   -webkit-box-shadow: 0 0 0 2px #21bde9;
           box-shadow: 0 0 0 2px #21bde9;
+}
+
+.form.inativo {
+  display: none;
 }
 
 .font-1-14 {
@@ -1378,4 +1383,74 @@ h1 {
 
 .contato .titulo {
   margin-bottom: 40px;
+}
+.contato.ativo {
+  display: block;
+}
+.contato .contato-mensagem {
+  display: none;
+}
+.contato .contato-mensagem.ativo {
+  display: grid;
+  place-items: center;
+  background: #141414;
+  max-width: 800px;
+  height: 442px;
+  margin: 0 auto;
+  -webkit-animation: popup 0.7s forwards;
+          animation: popup 0.7s forwards;
+}
+.contato .mensagem-enviada,
+.contato .mensagem-erro {
+  display: none;
+}
+.contato .mensagem-enviada.ativo,
+.contato .mensagem-erro.ativo {
+  display: block;
+  text-align: center;
+}
+.contato .mensagem-enviada.ativo span,
+.contato .mensagem-erro.ativo span {
+  display: inline-block;
+  color: #21bde9;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contato .mensagem-enviada.ativo .botao,
+.contato .mensagem-erro.ativo .botao {
+  margin-top: 40px;
+}
+
+@-webkit-keyframes popup {
+  from {
+    -webkit-transform: matrix3d(-30px, 0, 0);
+            transform: matrix3d(-30px, 0, 0);
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  to {
+    -webkit-transform: matrix3d(30px, 0, 0);
+            transform: matrix3d(30px, 0, 0);
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes popup {
+  from {
+    -webkit-transform: matrix3d(-30px, 0, 0);
+            transform: matrix3d(-30px, 0, 0);
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  to {
+    -webkit-transform: matrix3d(30px, 0, 0);
+            transform: matrix3d(30px, 0, 0);
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
