@@ -628,7 +628,7 @@ h1 {
           box-shadow: 0 0 0 2px #21bde9;
 }
 
-.form.inativo {
+.js .form.inativo {
   display: none;
 }
 
@@ -1384,42 +1384,6 @@ h1 {
 .contato .titulo {
   margin-bottom: 40px;
 }
-.contato.ativo {
-  display: block;
-}
-.contato .contato-mensagem {
-  display: none;
-}
-.contato .contato-mensagem.ativo {
-  display: grid;
-  place-items: center;
-  background: #141414;
-  max-width: 800px;
-  height: 442px;
-  margin: 0 auto;
-  -webkit-animation: popup 0.7s forwards;
-          animation: popup 0.7s forwards;
-}
-.contato .mensagem-enviada,
-.contato .mensagem-erro {
-  display: none;
-}
-.contato .mensagem-enviada.ativo,
-.contato .mensagem-erro.ativo {
-  display: block;
-  text-align: center;
-}
-.contato .mensagem-enviada.ativo span,
-.contato .mensagem-erro.ativo span {
-  display: inline-block;
-  color: #21bde9;
-  font-weight: bold;
-  cursor: pointer;
-}
-.contato .mensagem-enviada.ativo .botao,
-.contato .mensagem-erro.ativo .botao {
-  margin-top: 40px;
-}
 
 @-webkit-keyframes popup {
   from {
@@ -1453,4 +1417,38 @@ h1 {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+.js .js-contato-mensagem {
+  display: none;
+}
+.js .js-contato-mensagem.ativo {
+  display: grid;
+  place-items: center;
+  background: #141414;
+  max-width: 800px;
+  height: 442px;
+  margin: 0 auto;
+  -webkit-animation: popup 0.7s forwards;
+          animation: popup 0.7s forwards;
+}
+
+.js .mensagem-enviada,
+.js .mensagem-erro {
+  display: none;
+}
+.js .mensagem-enviada.ativo,
+.js .mensagem-erro.ativo {
+  display: block;
+  text-align: center;
+}
+.js .mensagem-enviada.ativo span,
+.js .mensagem-erro.ativo span {
+  display: inline-block;
+  color: #21bde9;
+  font-weight: bold;
+  cursor: pointer;
+}
+.js .mensagem-enviada.ativo .botao,
+.js .mensagem-erro.ativo .botao {
+  margin-top: 40px;
 }
