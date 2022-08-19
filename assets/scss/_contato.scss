@@ -1,48 +1,48 @@
 .contato-bg {
     background: $color-8;
     position: relative;
-    padding: var(--padding1) 10px var(--padding2) 10px;
+    padding: var(--padding1) 0.625rem var(--padding2) 0.625rem;
 
     @include d(m1) {
-        padding: var(--padding2) 10px;
+        padding: var(--padding2) 0.625rem;
     }
 
     &::before {
         position: absolute;
-        top: -120px;
+        top: -7.5rem;
         right: 0;
         display: block;
         content: "";
-        height: 123px;
+        height: 7.688rem;
         width: 100%;
         background: url("/assets//img//borda.svg") no-repeat;
         transform: rotateX(180deg);
 
         @include d(c2) {
-            top: -90px;
-            height: 93px;
+            top: -5.625rem;
+            height: 5.813rem;
         }
 
         @include d(t1) {
-            top: -60px;
-            height: 63px;
+            top: -3.75rem;
+            height: 3.938rem;
         }
 
         @include d(m2) {
-            top: -40px;
-            height: 43px;
+            top: -2.5rem;
+            height: 2.688rem;
         }
     }
 }
 
 @keyframes popup {
     from {
-        transform: matrix3d(-30px, 0, 0);
+        transform: matrix3d(-1.875rem, 0, 0);
         opacity: 0;
         transform: scale(0.7);
     }
     to {
-        transform: matrix3d(30px, 0, 0);
+        transform: matrix3d(1.875rem, 0, 0);
         opacity: 1;
         transform: scale(1);
     }
@@ -55,8 +55,8 @@
         display: grid;
         place-items: center;
         background: $color-8;
-        max-width: 800px;
-        height: 442px;
+        max-width: 50rem;
+        height: 27.625rem;
         margin: 0 auto;
         animation: popup 0.7s forwards;
     }
@@ -77,7 +77,7 @@
         }
 
         .botao {
-            margin-top: 40px;
+            margin-top: 2.5rem;
         }
     }
 }

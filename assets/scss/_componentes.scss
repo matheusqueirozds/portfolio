@@ -2,22 +2,22 @@
 
 /* CONTAINER */
 .container {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
 
     h2 {
         text-align: center;
         text-transform: uppercase;
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
 
         @include d(c1) {
-            margin-bottom: 30px;
+            margin-bottom: 1.875rem;
         }
 
         @include d(t2) {
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
 
         @include d(m1) {
@@ -27,10 +27,10 @@
         &::before {
             display: inline-block;
             content: "";
-            height: 17px;
-            width: 4px;
+            height: 1.063rem;
+            width: 0.25rem;
             background: $color-5;
-            margin-right: 4px;
+            margin-right: 0.25rem;
         }
     }
 }
@@ -40,16 +40,16 @@
     display: inline-block;
     background: none;
     color: $color-9;
-    padding: 12px 20px;
-    border-radius: 10px;
-    border: 3px solid $color-9;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.625rem;
+    border: 0.188rem solid $color-9;
     font: 600 1rem/1 $font-1;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.1);
     max-width: max-content;
     cursor: pointer;
 
     @include d(m1) {
-        padding: 12px 14px;
+        padding: 0.75rem 1rem;
     }
 
     &:hover {

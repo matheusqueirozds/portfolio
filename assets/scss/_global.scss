@@ -2,16 +2,16 @@
 @import "responsivo";
 
 :root {
-    --padding1: 30px;
-    --padding2: 60px;
-    --padding3: 120px;
-    --padding4: 160px;
+    --padding1: 1.875rem;
+    --padding2: 3.75rem;
+    --padding3: 7.5rem;
+    --padding4: 10rem;
 
     @include d(t1) {
-        --padding1: 15px;
-        --padding2: 30px;
-        --padding3: 60px;
-        --padding4: 80px;
+        --padding1: 0.938rem;
+        --padding2: 1.875rem;
+        --padding3: 3.75rem;
+        --padding4: 5rem;
     }
 }
 

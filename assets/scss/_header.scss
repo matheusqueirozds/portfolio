@@ -13,8 +13,8 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 20px;
-        max-width: 1200px;
+        gap: 1.25rem;
+        max-width: 75rem;
         margin: 0 auto;
     }
 }
@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
 
     a {
         padding: 0.5rem;
@@ -46,7 +46,7 @@
         display: block;
         position: absolute;
         width: 100%;
-        top: 57px;
+        top: 4rem;
         right: 0;
         background: $color-9;
         z-index: 1000;
@@ -58,8 +58,8 @@
 
         a {
             padding: 1rem 0;
-            margin: 0 1rem;
-            border-bottom: 2px solid rgba(68, 69, 87, 0.5);
+            margin: 0 0.5rem;
+            border-bottom: 0.125rem solid rgba(68, 69, 87, 0.5);
         }
     }
 }
@@ -80,28 +80,31 @@
 
     .js #hamburger {
         display: block;
-        border-top: 2px solid;
-        width: 20px;
+        border-top: 0.125rem solid;
+        width: 1.25rem;
         color: $color-1;
 
         &::after,
         &::before {
             display: block;
             content: "";
-            width: 20px;
-            height: 2px;
+            width: 1.25rem;
+            height: 0.125rem;
             background: currentColor;
-            margin-top: 5px;
+            margin-top: 0.313rem;
             transition: 0.3s;
             position: relative;
         }
     }
 
     .js #nav.ativo {
+
         .menu {
-            height: calc(100vh - 57px);
+            height: calc(100vh);
             visibility: visible;
             overflow-y: auto;
+            backdrop-filter: blur(13.5px);
+            background-color: rgba(0, 0, 0, 0.9);
         }
 
         #hamburger {
@@ -112,7 +115,7 @@
 
             &::after {
                 transform: rotate(-135deg);
-                top: -7px;
+                top: -0.438rem;
             }
         }
     }

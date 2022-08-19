@@ -7,34 +7,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
 
     @include d(t1) {
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     @include d(m1) {
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     img {
-        width: 250px;
+        width: 15.625rem;
 
         @include d(m1) {
-            height: 200px;
-            width: 200px;
+            height: 12.5rem;
+            width: 12.5rem;
         }
     }
 }
 
 .sobre-texto {
-    max-width: 720px;
+    max-width: 45rem;
 
     p {
         &:first-child {
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
     }
 }
