@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /* GLOBAL */
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/fonts/Poppins/Poppins-Regular.ttf) format("ttf"), url(/assets/fonts/Poppins/Poppins-Medium.ttf) format("ttf"), url(/assets/fonts/Poppins/Poppins-SemiBold.ttf) format("ttf");
+  font-style: normal;
+}
 .font-1-14 {
   font-weight: 400;
   font-size: 0.875rem;
@@ -340,6 +345,11 @@ h1 {
 }
 
 /* UTILIDADES */
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/fonts/Poppins/Poppins-Regular.ttf) format("ttf"), url(/assets/fonts/Poppins/Poppins-Medium.ttf) format("ttf"), url(/assets/fonts/Poppins/Poppins-SemiBold.ttf) format("ttf");
+  font-style: normal;
+}
 .font-1-14 {
   font-weight: 400;
   font-size: 0.875rem;
@@ -506,6 +516,11 @@ h1 {
   color: #000;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/fonts/Poppins/Poppins-Regular.ttf) format("ttf"), url(/assets/fonts/Poppins/Poppins-Medium.ttf) format("ttf"), url(/assets/fonts/Poppins/Poppins-SemiBold.ttf) format("ttf");
+  font-style: normal;
+}
 .font-1-14 {
   font-weight: 400;
   font-size: 0.875rem;
@@ -636,6 +651,11 @@ h1 {
   display: none;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/fonts/Poppins/Poppins-Regular.ttf) format("ttf"), url(/assets/fonts/Poppins/Poppins-Medium.ttf) format("ttf"), url(/assets/fonts/Poppins/Poppins-SemiBold.ttf) format("ttf");
+  font-style: normal;
+}
 .font-1-14 {
   font-weight: 400;
   font-size: 0.875rem;
