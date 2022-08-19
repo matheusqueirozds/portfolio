@@ -44,14 +44,24 @@
     }
 }
 
-.introducao-conteudo p {
-    max-width: 400px;
+.introducao-conteudo {
+    h2 {
+        text-align: left;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
 
-    @include d(t1) {
-        max-width: max-content;
+    p {
+        max-width: 400px;
+
+        @include d(t1) {
+            max-width: max-content;
+        }
     }
 }
 
 .introducao-botoes {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }

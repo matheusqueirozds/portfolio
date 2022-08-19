@@ -793,6 +793,11 @@ span.destaque {
   max-width: none;
 }
 
+.introducao-conteudo h2 {
+  text-align: left;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
 .introducao-conteudo p {
   max-width: 400px;
 }
@@ -805,7 +810,15 @@ span.destaque {
 }
 
 .introducao-botoes {
-  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
 }
 
 /* SOBRE */
