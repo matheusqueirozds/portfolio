@@ -2,16 +2,6 @@
 <html lang="pt-BR">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H115PGJ3DM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-H115PGJ3DM');
-</script>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,6 +36,16 @@
     <script>document.documentElement.className += ' js'</script>
     <link rel="preload" href="/assets/css/style.min.css" as="style">
     <link rel="stylesheet" href="/assets/css/style.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H115PGJ3DM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H115PGJ3DM');
+    </script>
 </head>
 
 <body class="font-1-16">
@@ -72,7 +72,7 @@
                     <h2 class="font-1-24b">Dev Frontend</h2>
                     <p>Desenvolvo experiências de navegação através de projetos únicos, utilizando <span class="destaque">boas práticas</span> com foco em <span class="destaque">performance</span> .</p>
                 </div>
-                <picture class="introducao-imagem"><img src="/assets/img//computer.svg" alt="desenho de uma tela de um computador, com conteúdo fictício" width="224" height="200"></picture>
+                <picture class="introducao-imagem"><img src="/assets/img/computer.svg" alt="desenho de uma tela de um computador, com conteúdo fictício" width="224" height="200"></picture>
                 <div class="introducao-conteudo">
                     <h2 class="font-1-24b">UI Designer</h2>
                     <p>Construo interfaces digitais em aplicativos web, aplicando conhecimentos em <span class="destaque">usabilidade</span> e <span class="destaque">experiência do usuário</span> .</p>
@@ -196,7 +196,7 @@
             <h2>Contato</h2>
             <form class="form contato-form" action="enviar.php" method="post">
                 <div><label for="nome">Nome <span class="obrigatorio">*</span></label><input type="text" name="nome" id="nome" placeholder="Luke Skywalker" required></div>
-                <div><label for="whatsapp">WhatsApp</label><input type="tel" name="whatsapp" id="whatsapp" placeholder="(XX) 9XXXX-XXXX" required></div>
+                <div><label for="whatsapp">WhatsApp</label><input type="tel" name="whatsapp" id="whatsapp" placeholder="(XX) 9XXXX-XXXX"></div>
                 <div class="col-2"><label for="email">E-mail <span class="obrigatorio">*</span></label><input type="email" name="email" id="email" placeholder="lukeskywalker@email.com" required></div>
                 <div class="col-2"><label for="mensagem">Mensagem <span class="obrigatorio">*</span></label><textarea name="mensagem" id="mensagem" rows="5" placeholder="O que você precisa?" required></textarea></div><button class="botao terciario col-2">Enviar Mensagem /></button>
             </form>
