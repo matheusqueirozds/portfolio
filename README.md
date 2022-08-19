@@ -39,8 +39,7 @@ O site é composto por 5 seções diferentes:
 
 ## Stacks utilizadas
 
-HTML, CSS e JavaScript. Não foram utilizados frameworks ou plugins nesse projeto.
-
+HTML, CSS e JavaScript. Além disso, utilizei um plugin de PHP para fazer as requisições do formulário de contato.
 #
 
 ## Autor
