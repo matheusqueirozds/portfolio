@@ -641,24 +641,32 @@ span.destaque {
 .form input[type=tel],
 .form input[type=email],
 .form textarea {
+  background: #f7f7f7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
-  background: #f7f7f7;
   border: 1px solid #444557;
   padding: 12px;
   border-radius: 4px;
   width: 100%;
 }
-.form input[type=text]:focus,
+.form input[type=text]:focus, .form input[type=text]:hover,
 .form input[type=tel]:focus,
+.form input[type=tel]:hover,
 .form input[type=email]:focus,
-.form textarea:focus {
+.form input[type=email]:hover,
+.form textarea:focus,
+.form textarea:hover {
   outline: none;
   border-color: #def7ff;
   background: #fff;
   -webkit-box-shadow: 0 0 0 2px #21bde9;
           box-shadow: 0 0 0 2px #21bde9;
+}
+.form .obrigatorio {
+  color: #21bde9;
 }
 
 .js .form.inativo {
@@ -877,7 +885,7 @@ span.destaque {
 .sobre-texto {
   max-width: 720px;
 }
-.sobre-texto:first-of-type {
+.sobre-texto p:first-child {
   margin-bottom: 20px;
 }
 

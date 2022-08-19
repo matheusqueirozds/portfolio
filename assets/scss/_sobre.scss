@@ -32,7 +32,9 @@
 .sobre-texto {
     max-width: 720px;
 
-    &:first-of-type {
-        margin-bottom: 20px;
+    p {
+        &:first-child {
+            margin-bottom: 20px;
+        }
     }
 }

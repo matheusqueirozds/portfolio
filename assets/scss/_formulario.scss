@@ -34,23 +34,29 @@
     input[type="tel"],
     input[type="email"],
     textarea {
-        @include font-1-d(16);
         background: #f7f7f7;
+        transition: 0.2s;
+
+        @include font-1-d(16);
         border: 1px solid $color-6;
         padding: 12px;
         border-radius: 4px;
         width: 100%;
 
-        &:focus {
+        &:focus,
+        &:hover {
             outline: none;
             border-color: $color-2;
             background: $color-1;
             box-shadow: 0 0 0 2px $color-5;
         }
     }
+
+    .obrigatorio {
+        color: $color-5;
+    }
 }
 
 .js .form.inativo {
     display: none;
 }
-
