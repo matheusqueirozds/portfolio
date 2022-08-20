@@ -1,3 +1,4 @@
+@import "cores";
 @import "tipografia";
 @import "responsivo";
 
@@ -41,4 +42,18 @@ ul {
 
 h1 {
     font-weight: normal;
+}
+
+::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $color-5;
+    border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+    background: $color-8;
 }
